@@ -1,7 +1,7 @@
 <?php 
 
 //Conexion a la base de datos
-$conn = mysqli_connect('localhost', 'david', '1234', 'hotel');
+$conn = mysqli_connect('localhost', 'david', '1234', 'avia-review-bd');
 
 //Comprobación la conexión
 if(!$conn) {
