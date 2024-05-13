@@ -42,7 +42,7 @@
                     <form class="d-flex" role="search">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Busca en AviaReview.com" aria-label="Search" aria-describedby="button-addon2">
-                            <button class="btn" type="button" id="button-addon2"><span class="material-symbols-outlined md-18 m-1" style="vertical-align: middle;">search</span>Buscar</button>
+                            <button class="btn disabled" type="button" id="button-addon2"><span class="material-symbols-outlined md-18 m-1" style="vertical-align: middle;">search</span>Buscar</button>
                         </div>
                     </form>
                 </div>
