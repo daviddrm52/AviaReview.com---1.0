@@ -3,8 +3,8 @@
 $mensajeError="";
 
 if(count($_POST)>0){
-    include_once('./../config/config_bd.php');    
-    $inicioSesion = mysqli_query($conn, "SELECT * FROM `ar-usuario` WHERE usuario = '".$_POST["username"]."' AND contrasena = '".$_POST["password"]."'");
+    include_once('./../../config/config_bd.php');    
+    $inicioSesion = mysqli_query($conn, "SELECT * FROM `ar-usuario` WHERE nombre_usuario = '".$_POST["username"]."' AND contrasena = '".$_POST["password"]."'");
     $row = mysqli_fetch_array($inicioSesion);
     if(is_array($row)){
         $_SESSION["id"] = $row['id'];
@@ -13,7 +13,7 @@ if(count($_POST)>0){
         $mensajeError="¡Usuario o contraseña incorrectos! Vuelva a intentarlo.";
     }
     if(isset($_SESSION["id"])){
-        header("Location: ./../index.php");
+        header("Location: ./../../index.php");
         exit();
     }
 }
@@ -25,7 +25,7 @@ if(count($_POST)>0){
     <link rel="stylesheet" href="/aviareview/css/clientes/log-in-usuario.css">
     <?php include("./../../template/header.php"); ?>
     <main class="my-3">
-        <div id="formRegister">
+        <form id="formRegister" action="log-in-usuario.php" method="POST">
             <div>
                 <h2 id="formTitle"><b>Iniciar sesión</b></h2>
                 <input type="text" name="hiddenId" id="hiddenId" value="0">
@@ -35,12 +35,12 @@ if(count($_POST)>0){
                     <label for="password">Contraseña: </label>
                     <p><input type="password" name="password" id="passwordSignIn" class="textInput" placeholder="Contraseña..."></p>
                     <div id="buttonForm">
-                        <button id="signInForm"><span class="material-symbols-outlined">app_registration</span>Sign In</button>
+                        <button id="signInForm" type="submit" value="submit" name="submit"><span class="material-symbols-outlined">app_registration</span>Sign In</button>
                     </div>
                     <small id="passwordSignInError"><?php echo htmlspecialchars($mensajeError) ?></small>
                 </div>
             </div>
-        </div>
+        </form>
         <div id="formRegister">
             <div>
                 <h2 id="formTitle"><b>¿No tienes ninguna cuenta de AviaReview.com?</b></h2>

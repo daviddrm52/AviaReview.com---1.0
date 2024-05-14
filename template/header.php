@@ -15,7 +15,43 @@
                 </a>
                 <i class="d-flex">
                     <a href="/aviareview/ayuda-usuario.php" class="text-dark"><button class="btn ms-1"><span class="material-symbols-outlined md-18 m-1" style="vertical-align: middle;">help</span>Ayuda</button></a>
-                    <a href="/aviareview/html/usuarios/log-in-usuario.php" class="text-dark"><button class="btn ms-1"><span class="material-symbols-outlined md-18 m-1" style="vertical-align: middle;">account_circle</span>Iniciar sesión</button></a>
+                    <a href="
+                        <?php 
+                            if(empty($_SESSION["id"])){
+                                echo "/aviareview/html/usuarios/log-in-usuario.php";
+                            } else {
+                                echo "/aviareview/html/usuarios/ajustes-usuario.php";
+                            }
+                        ?>" class="text-dark"><button class="btn ms-1"><span class="material-symbols-outlined md-18 m-1" style="vertical-align: middle;">account_circle</span>
+                    <?php
+                        if(empty($_SESSION["id"])) {
+                            echo "Iniciar sesión";
+                        } else {
+                            //echo $_SESSION["id"]; 
+                
+                            //Conexion a la base de datos
+                            $conn = mysqli_connect('localhost', 'david', '1234', 'avia-review-bd');
+
+                            //Query de la base de datos para recuperar los tipos de habitaci
+                            $sql = "SELECT * FROM `ar-usuario` WHERE id = '".$_SESSION["id"]."'";
+
+                            //Lanzamos la query y capturamos los resultados
+                            $resultados = mysqli_query($conn, $sql);
+
+                            $usuario = mysqli_fetch_all($resultados, MYSQLI_ASSOC);
+
+                            //Liberar memoria
+                            mysqli_free_result($resultados);
+
+                            //Cerramos conexión
+                            mysqli_close($conn);
+
+                            foreach ($usuario as $user){
+                            echo $user["nombre_usuario"];
+                            }
+                        }
+                    ?>
+                </button></a>
                 </i>
             </div>
         </nav>

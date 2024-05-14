@@ -3,7 +3,7 @@
 
 <?php 
 
-//Conexion a la base de datos
+//Conexion a la base de datos (rellenar con los datos del hosting)
 $conn = mysqli_connect('remotehost.es', 'dwes1234', 'test1234.', 'dwesdatabase');
 
 //Comprobación la conexión
