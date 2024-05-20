@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <title>Ajuste del usuario - AviaReview.com</title>
-    <link rel="stylesheet" href="/aviareview/css/clientes/ajustes-usuario.css">
+    <link rel="stylesheet" href="/aviareview/css/ajustes-usuario.css">
     <?php include("./../../template/header.php"); ?>
     <main class="my-3">
     <div id="userBasicDisplay">

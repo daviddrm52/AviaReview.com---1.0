@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="es">
+    <link rel="stylesheet" href="/aviareview/css/index.css">
     <title>Bienvenido/a a AviaReview.com</title>
     <?php include("./template/header.php"); ?>
     <main class="my-3">
@@ -14,7 +15,7 @@
                 <div class="col-2"></div>
             </div>
         </div>
-        <div class="container-lg text-center mt-3 rounded-3" style="background-color: #EBEBEB;">
+        <div class="container text-center mt-3 rounded-3" style="background-color: #EBEBEB;">
             <div class="row">
                 <div class="col">
                     <p class="fs-2 mt-3">Reseñas de aerolineas</p>
@@ -25,7 +26,7 @@
                     <img class="figure-img img-fluid my-3 rounded-3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/HL7725%40PEK_%2820191211164812%29.jpg/1024px-HL7725%40PEK_%2820191211164812%29.jpg" alt="Boeing 737-9B5 of Korean Air (HL7725)" width="500px">
                     <figcaption class="figure-caption">Boeing 737-9B5 de Korean Air (HL7725).</figcaption>
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-6">
                     <div class="row m-3">
                         <div class="col">
                             <p class="fs-5">En AviaReview disponemos de reseñas de mayoria de las aerolineas que hay en servicio actualmente, en diferentes rutas y en diferentes clases.</p>
@@ -33,17 +34,17 @@
                        </div>
                     </div>
                     <div class="row m-3">
-                        <div class="col-7">
+                        <div class="col-6">
 
                         </div>
-                        <div class="col-5">
-                            <a href="./html/aerolineas/aerolineas-lista.php"><button type="button" class="btn btn-lg">Ver reseñas de aerolineas</button></a>
+                        <div class="col-6">
+                            <a href="./html/aerolineas/informacion-resena-aerolineas.php"><button type="button" class="btn btn-lg">Ver reseñas de aerolineas</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-lg text-center my-3 rounded-3" style="background-color: #EBEBEB;">
+        <div class="container text-center my-3 rounded-3" style="background-color: #EBEBEB;">
             <div class="row">
                 <div class="col">
                     <p class="fs-2 mt-3">Reseñas de aeropuertos</p>
@@ -58,10 +59,10 @@
                        </div>
                     </div>
                     <div class="row m-3">
-                        <div class="col-7">
+                        <div class="col-6">
 
                         </div>
-                        <div class="col-5">
+                        <div class="col-6">
                             <a href="./html/aeropuertos/aeropuertos-lista.php"><button type="button" class="btn btn-lg">Ver reseñas de aeropuertos</button></a>
                         </div>
                     </div>
@@ -72,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-lg text-center mt-3 rounded-3" style="background-color: #EBEBEB;">
+        <div class="container text-center mt-3 rounded-3" style="background-color: #EBEBEB;">
             <div class="row">
                 <div class="col">
                     <p class="fs-2 mt-3">Incidencias aeréas</p>
@@ -90,10 +91,10 @@
                        </div>
                     </div>
                     <div class="row m-3">
-                        <div class="col-7">
+                        <div class="col-6">
 
                         </div>
-                        <div class="col-5">
+                        <div class="col-6">
                             <a href="./html/incidencias/incidencias-lista.php"><button type="button" class="btn btn-lg">Ver incidencias aereas</button></a>
                         </div>
                     </div>

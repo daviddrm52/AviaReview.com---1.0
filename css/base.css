@@ -8,6 +8,10 @@ body {
     background-color: #F7A500 !important;
 }
 
+a {
+    color: #FFFFFF !important;
+}
+
 .bg-primary {
     background-color: #B4001D !important;
 }
