@@ -19,3 +19,8 @@ a {
 header, footer {
     background-color: #B4001D !important;
 }
+
+.enlaces-paginas a {
+    color: #B4001D !important;
+    text-decoration: none;
+}

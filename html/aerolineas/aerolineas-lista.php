@@ -27,17 +27,16 @@
     <title>Reseñas de aerolineas - AviaReview.com</title>
     <?php include("./../../template/header.php"); ?>
     <main class="my-3">
-    <div class="container-lg text-center mt-3 rounded-3" style="background-color: #EBEBEB;">
+        <div class="container-lg text-center mt-3 rounded-3" style="background-color: #EBEBEB;">
             <div class="row">
                 <div class="col">
-                    <p class="fs-2 mt-3">Información sobre las reseñas a aerolineas</p>
+                    <p class="fs-2 mt-3">Reseñas de aerolineas más recientes</p>
                 </div>
             </div>
             <div class="row align-items-center">
                 <div class="col-lg">
                     <div class="row m-3">
                         <div class="col">
-                            <p class="fs-5">Ultimas reseñas publicadas en AviaReview.com</p>
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -57,7 +56,7 @@
                                         <td><?php echo htmlspecialchars($rev['id_aerolinea'])?></td>
                                         <td><?php echo htmlspecialchars($rev['fecha_vuelo'])?></td>
                                         <td><?php echo htmlspecialchars($rev['valoracion'])?></td>
-                                        <td><button class="btn boton-resena"><a href="detalles_resena.php?id=<?php echo $rev['id'] ?>">Información de la reserva</a></button></td>
+                                        <td><button class="btn boton-resena"><a href="detalles-resena.php?id=<?php echo $rev['id'] ?>">Información de la reserva</a></button></td>
                                     </tr>
                                 </tbody>
                                 <?php endforeach; ?>
