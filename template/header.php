@@ -32,6 +32,9 @@
                             //Conexion a la base de datos
                             $conn = mysqli_connect('localhost', 'david', '1234', 'avia-review-bd');
 
+                            //En caso de conexión desde la expansion de dominio
+                            // $conn = mysqli_connect('c96709.sgvps.net', 'u8pvbkfgz9mai', 'david-IME-2024', 'dbtqrttqlrfpkp');;
+
                             //Query de la base de datos para recuperar los tipos de habitaci
                             $sql = "SELECT * FROM `ar-usuario` WHERE id = '".$_SESSION["id"]."'";
 

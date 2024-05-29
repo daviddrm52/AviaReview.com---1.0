@@ -13,7 +13,8 @@ if(count($_POST)>0){
         $mensajeError="¡Usuario o contraseña incorrectos! Vuelva a intentarlo.";
     }
     if(isset($_SESSION["id"])){
-        header("Location: ./../../index.php");
+        header('Location: /aviareview/index.php', true);
+        echo "<script>window.location.href='/aviareview/index.php'</script>";
         exit();
     }
 }

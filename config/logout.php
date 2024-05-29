@@ -4,5 +4,6 @@
    unset($_SESSION["username"]);
    
    echo 'Cerrando sesión...';
-   header('Location: ./../index.php');
+   header('Location: /aviareview/index.php', true);
+   echo "<script>window.location.href='/aviareview/index.php'</script>";
 ?>
