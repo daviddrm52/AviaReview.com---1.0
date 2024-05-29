@@ -14,7 +14,7 @@
                     <img src="/aviareview/img/logo/base_logo.png" alt="AviaReview.com" width="130px">
                 </a>
                 <i class="d-flex">
-                    <a href="/aviareview/ayuda-usuario.php" class="text-dark"><button class="btn ms-1"><span class="material-symbols-outlined md-18 m-1" style="vertical-align: middle;">help</span>Ayuda</button></a>
+                    <a href="/aviareview/ayuda-usuario.php" class="text-dark"><button class="btn ms-1">Ayuda</button></a>
                     <a href="
                         <?php 
                             if(empty($_SESSION["id"])){
@@ -22,7 +22,7 @@
                             } else {
                                 echo "/aviareview/html/usuarios/ajustes-usuario.php";
                             }
-                        ?>" class="text-dark"><button class="btn ms-1"><span class="material-symbols-outlined md-18 m-1" style="vertical-align: middle;">account_circle</span>
+                        ?>" class="text-dark"><button class="btn ms-1">
                     <?php
                         if(empty($_SESSION["id"])) {
                             echo "Iniciar sesión";
@@ -66,13 +66,13 @@
                             <a class="nav-link text-light" href="/aviareview/index.php">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/aviareview/html/aerolineas/aerolineas-lista.php">Aerolineas</a>
+                            <a class="nav-link text-light" href="/aviareview/html/aerolineas/informacion-resena-aerolinea.php">Aerolineas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/aviareview/html/aeropuertos/aeropuertos-lista.php">Aeropuertos</a>
+                            <a class="nav-link text-light" href="/aviareview/html/aeropuertos/informacion-resena-aeropuerto.php">Aeropuertos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/aviareview/html/incidencias/incidencias-lista.php">Incidencias</a>
+                            <a class="nav-link text-light" href="/aviareview/html/incidencias/informacion-resena-incidencia.php">Incidencias</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">

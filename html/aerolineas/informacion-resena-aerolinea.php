@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
     <link rel="stylesheet" href="/aviareview/css/informacion-resena-aerolineas.css">

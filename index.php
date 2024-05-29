@@ -63,7 +63,7 @@
 
                         </div>
                         <div class="col-6">
-                            <a href="./html/aeropuertos/aeropuertos-lista.php"><button type="button" class="btn btn-lg">Ver reseñas de aeropuertos</button></a>
+                            <a href="./html/aeropuertos/informacion-resena-aeropuerto.php"><button type="button" class="btn btn-lg">Ver reseñas de aeropuertos</button></a>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
 
                         </div>
                         <div class="col-6">
-                            <a href="./html/incidencias/incidencias-lista.php"><button type="button" class="btn btn-lg">Ver incidencias aereas</button></a>
+                            <a href="./html/incidencias/informacion-resena-incidencia.php"><button type="button" class="btn btn-lg">Ver incidencias aereas</button></a>
                         </div>
                     </div>
                 </div>
